@@ -14,8 +14,8 @@
 # Lista de alunos (cada aluno é um dicionário)
 alunos = [
     {"nome": "Gabriel", "idade": 21, "altura": 1.80, "ativo": True,  "avaliacoes": [9.0, 9.0, 8.2]},
-    {"nome": "Murilo", "idade": 18, "altura": 1.60, "ativo": False, "avaliacoes": [2.0, 2.5, 6.0]},
-    {"nome": "Luana", "idade": 22, "altura": 1.65, "ativo": True,  "avaliacoes": [1.0, 5.5, 9.2]},
+    {"nome": "Mago Negro", "idade": 999, "altura": 1.83, "ativo": False, "avaliacoes": [2.0, 2.5, 6.0]},
+    {"nome": "Luana", "idade": 22, "altura": 1.65, "ativo": True,  "avaliacoes": [6.0, 5.5, 9.2]},
     {"nome": "Ben-10", "idade": 10, "altura": 10, "ativo": True,  "avaliacoes": [10.0, 10.0, 10.0]},
 ]
 
@@ -71,4 +71,5 @@ while input_usuario != "4":
     print("2) Exibir todos os alunos")
     print("3) Listar alunos ativos")
     print("4) Sair")
+
     input_usuario = input("Escolha uma opção: ")
