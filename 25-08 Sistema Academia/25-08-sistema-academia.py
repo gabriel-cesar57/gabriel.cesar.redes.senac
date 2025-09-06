@@ -11,7 +11,7 @@
 
 
 
-# Lista de alunos (cada aluno é um dicionário)
+# lista
 alunos = [
     {"nome": "Gabriel", "idade": 21, "altura": 1.80, "ativo": True,  "avaliacoes": [9.0, 9.0, 8.2]},
     {"nome": "Mago Negro", "idade": 999, "altura": 1.83, "ativo": False, "avaliacoes": [2.0, 2.5, 6.0]},
@@ -19,11 +19,10 @@ alunos = [
     {"nome": "Ben-10", "idade": 10, "altura": 10, "ativo": True,  "avaliacoes": [10.0, 10.0, 10.0]},
 ]
 
-# Função para calcular a média das avaliações
+# funçoes
 def calcular_media(avaliacoes):
     return sum(avaliacoes) / len(avaliacoes) if avaliacoes else 0.0
 
-# Exibir dados dos alunos
 def exibir_alunos(alunos):
     for a in alunos:
         print(f"Nome: {a['nome']}")
@@ -33,15 +32,14 @@ def exibir_alunos(alunos):
         print(f"Média avaliações: {calcular_media(a['avaliacoes']):.2f}")
         print("-" * 20)
 
-# Listar apenas alunos ativos
 def listar_ativos(alunos):
     return [a for a in alunos if a["ativo"]]
 
-# Função para cadastrar novo aluno
 def cadastrar(alunos, nome, idade, altura, ativo, avaliacoes):
     alunos.append({"nome": nome, "idade": idade, "altura": altura, "ativo": ativo, "avaliacoes": avaliacoes})
 
 
+# terminal
 print("1) Cadastrar aluno")
 print("2) Exibir todos os alunos")
 print("3) Listar alunos ativos")
